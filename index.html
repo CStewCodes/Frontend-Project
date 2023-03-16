@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DoD Media Map</title>
+    <!--Below I'm refrencing Leaflet's map API starting with the CSS and then the JS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <!--Below I'm linking the CSS Style sheet I'm using to style the rest of the webpage-->
+    <link rel="stylesheet" href="index.css">
+    <!--Below is a link to Bulma CSS Style, not sure if I'll use it yet.-->
+    <!-- <rel="stylesheet"
+    ref="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/> -->
+</head>
+<body>
+    <!--Below is where my Leaflet MAP will show up-->
+    <div id="map"></div>
+    <!--Below is where my images will be sourced, for the purpose of the MVP this is locally sourced and not using the DVIDS API-->
+    <img src="assets/6559671.jpg" height=" 100px" width="auto" class ="w3-border w3-padding" alt=" helicopter">
+     <!--Below I'm linking the script source for the rest of the webpage-->
+    <script src="index.js"></script>
+</body>
+</html>
+
