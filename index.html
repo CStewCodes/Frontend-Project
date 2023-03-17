@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--The following three links are fonts for my h1,h2, and paragraphs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">    
         <title>DoD Media Map</title>
     <!--Below I'm refrencing Leaflet's map API starting with the CSS and then the JS-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
@@ -14,16 +18,32 @@
 
     <!--Below I'm linking the CSS Style sheet I'm using to style the rest of the webpage-->
     <link rel="stylesheet" href="index.css">
-    <!--Below is a link to Bulma CSS Style, not sure if I'll use it yet.-->
-    <!-- <rel="stylesheet"
-    ref="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/> -->
+
 </head>
 <body>
+    <header class="top hover new-nav" id="header-main">
+        <div class="header_banner_container">
+            <div class="header_banner_inner">
+                <div class="header_banner_flag"></div>
+            </div>
+        </div>
+    </header>
+    <div class="flex-container">
+        <div class="box"><h1>Where are our troops?</h1></div>
+        <div class="box"><h2>This map is currenly an MVP of a bigger project</h2></div>
+        <div class="box"><p>Currently displayed are images that are sourced locally in the project files, and the points on the map are hard-coded in. <br> The desired end product is to source these images from <a href="https://www.dvidshub.net/">DVIDS</a> and populate the map with the last year of published content. </p></div>
+    </div>
+   
     <!--Below is where my Leaflet MAP will show up-->
     <div id="map"></div>
-    <!--Below is where my images will be sourced, for the purpose of the MVP this is locally sourced and not using the DVIDS API-->
-    <img src="assets/6559671.jpg" height=" 100px" width="auto" class ="w3-border w3-padding" alt=" helicopter">
-     <!--Below I'm linking the script source for the rest of the webpage-->
+
+    <footer>
+        <div class="flex-container">
+            <div class="box"><p>&copy;Created by Christopher Stewart</p></div>
+         
+        </div>
+      </footer>
+<!--Below I'm linking the script source for the rest of the webpage-->
     <script src="index.js"></script>
 </body>
 </html>

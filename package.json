@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@vizuaalog/bulmajs": "^0.12.2"
+  }
+}
